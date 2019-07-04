@@ -1,6 +1,6 @@
 ## React Redux
 
-A Simple react redux app using the documentation that is on the redux site.
+Async Actions
 
 ## Available Scripts
 
