@@ -1,0 +1,40 @@
+#navbar-container{
+    width:100vw;
+    height:6vh;
+    background-color:blue;
+    position:fixed;
+    top:0;
+    
+}
+#navbar-sub{
+    width:25vw;
+    height:4vh;
+    background-color:white;
+    float:right;
+    border-radius: 20px;
+    padding:1pt;
+    margin:1pt;
+}
+#navbar-sub-1{
+    width:10vw;
+    height:4vh;
+    display:inline-block;
+}
+#navbar-sub-2{
+    width:8vw;
+    height:4vh;
+    float:right;
+    background-color: darkcyan;
+    border-radius:20px;
+    color:white;
+}
+#navbar-sub-1-1{
+    margin:1pt auto;
+}
+#navbar-sub-1-2{
+    margin:1pt auto;
+}
+#navbar-img{
+    width:5vw;
+    height:5vw;
+}
