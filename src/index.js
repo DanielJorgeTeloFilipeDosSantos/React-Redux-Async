@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux'
 import {createStore,applyMiddleware} from 'redux'
-import reducer from './reducers'
+import rootReducer from './reducers'
 import thunk from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 
@@ -17,7 +17,8 @@ if (process.env.NODE_ENV !== 'production') {
   middleware.push(createLogger());
 }
 
-const store = createStore(reducer,applyMiddleware(...middleware))
+const store = createStore(rootReducer,applyMiddleware(...middleware))
+console.log('from store:  ',store.getState())
 
 
 ReactDOM.render(

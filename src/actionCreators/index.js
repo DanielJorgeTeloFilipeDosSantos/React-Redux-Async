@@ -15,10 +15,18 @@ export function changeNumber(number){
     }
 }
 
-export const  fetchPosts = (name,number) => dispatch => {
-    console.log('hello')
-    dispatch(changeWord(name))
-      .then(dispatch(changeNumber(number)))
-  }
+export function getProduct(title){
+    return {
+        type: types.RECIEVE_PRODUCT,
+        title
+    }
+}
+
+export function addToCart(title){
+    return {
+        type: types.CHECKOUT_TITLE,
+        title
+    }
+}
 
 

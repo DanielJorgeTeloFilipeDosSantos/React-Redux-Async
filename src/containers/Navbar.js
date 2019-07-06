@@ -25,10 +25,8 @@ export class Navbar extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state.number)
-  
     return{
-      number: state.number
+      number: state.changeNumberName.number
     }
   }
 
