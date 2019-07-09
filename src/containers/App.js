@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import {connect} from 'react-redux'
-import {CHANGE_NAME, CHANGE_NUMBER} from '../actionTypes/ActionTypes';
+import {CHANGE_NAME, CHANGE_NUMBER, TOGGLE_CHECKOUT} from '../actionTypes/ActionTypes';
 import Navbar from './Navbar'
 import Checkout from '../containers/Checkout'
 import ProductList from './ProductList';
@@ -15,8 +15,6 @@ function App(props) {
           <Navbar/>
         <br/><br/>
           <ProductList/>
-          <br/><br/><br/>
-          <br/><br/><br/>
           <Checkout/> 
     </div>
   );
@@ -35,6 +33,9 @@ const mapDispatchToProps = dispatch => {
       dispatch({type: CHANGE_NAME});
       dispatch({type: CHANGE_NUMBER});
 
+    },
+    onToggleCheckoutClick: () =>{
+      dispatch({type: TOGGLE_CHECKOUT});
     }
   }
 }

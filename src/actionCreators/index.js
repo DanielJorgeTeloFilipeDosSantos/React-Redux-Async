@@ -29,4 +29,19 @@ export function addToCart(title){
     }
 }
 
+export function checkoutPrice(price){
+    return {
+        type: types.CHECKOUT_PRICE,
+        price
+    }
+}
+
+
+
+export function toggleCheckout(){
+    return{
+        type: types.TOGGLE_CHECKOUT,
+    }
+}
+
 

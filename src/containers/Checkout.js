@@ -7,16 +7,18 @@ import '../styles/checkout.css'
 export class Checkout extends Component {
     render() {
         return (
-            <div className='checkout-container'>
+            <div id='checkout-container'>
                 <div className='top-button'>
-                    Click to Checkout
+                    Your Products to Checkout
                 </div>
                 <div>
+                    <p className='float-right'>What you are eating</p> <p className='float-left'>Price</p>
+                </div>
+                <div className="checkout-card-container">
                 {this.props.clickedTitle.map(product =>
                     <ProductCheckout
                     key={product.id}
-                    title={product}
-                    product={product}/>
+                    title={product}/>
                     )}
 
                 </div>

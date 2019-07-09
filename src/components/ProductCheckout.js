@@ -9,10 +9,13 @@ export class ProductCheckout extends Component {
     render() {
         return (
             <div id="Card2">
-                <div>
+              <div>
+                <div className='float-right2'>
                     {this.props.title}
                 </div>
-                <div>
+                <div className='float-left2'>
+                  <p>€12</p>
+                </div>
                 </div>
             </div>
         )
